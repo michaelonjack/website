@@ -1,0 +1,85 @@
+body {
+	background-color:black;
+}
+#header{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	height: 75px;
+	bottom: -50px;
+    	width: 1200px;
+	background-color: #3c4543;
+    	margin-bottom: 20px;
+}
+table {
+	color:#A4A4A4;
+        border-radius: 5px;
+        margin: auto;
+        margin-top:20px;
+        border:black;
+}
+td {
+	border:solid #A4A4A4 2px;
+        border-radius: 5px;
+        margin:auto;
+}
+h1 {
+	text-align:center;
+        margin:auto;
+        margin-top:10px;
+        color:#A4A4A4;
+        border: solid #A4A4A4 2px;
+        background-color:black;
+        border-radius: 5px;
+        height: 30px;
+        width:150px;
+        padding:10px;
+}
+div {
+	height: 120px;
+        width: 100px;
+        border: 2px solid #A4A4A4;
+        display: inline-block;
+        border-radius: 5px;
+        margin:auto;
+        text-align:center;
+}
+img {
+	height: 120px;
+        width: 100px;
+        margin: auto;
+        display: inline-block;
+        border-radius: 5px;
+}
+#footer{
+        clear:both;
+	position: relative;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 75px;
+        bottom: -50px;
+        width: 1200px;
+	background-color: #3c4543;
+}
+
+.button{
+	border: 2px solid #000000;
+	margin-top: 15px;
+        text-align:center;
+	left: 229px;
+	bottom: -20px;
+	border-radius: 5px;
+	background-color: black;
+        border: solid #A4A4A4 2px;
+	height: 30px;
+	width: 150px;
+        padding-top:7px;
+}
+a {
+	text-decoration:none;
+        color: #A4A4A4;
+}
+#cars2 {
+	margin-left: 432px;
+}
+
+

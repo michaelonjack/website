@@ -1,0 +1,49 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<title>roommates</title>
+		
+		<script type="text/javascript">
+   			function toggle_visibility(id) {
+       			var e = document.getElementById(id);
+    			e.style.display = (e.style.display == 'inline-block') ? 'none' : 'inline-block';
+   			}
+		</script>
+		
+	</head>
+	<br><br><br><br><br>
+	<body>
+	
+		<div class="top">
+    		<input type='image' src='/images/menu.png' id='hideshow' alt='hide/show' width='48' height='48' onclick="toggle_visibility('left');">
+		</div>
+
+		<div class="left" id="left" style="font-size:120%">
+    		<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>MENU</b><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.github.com/michaelonjack">GITHUB</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/info">INFORMATION</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/samples">SAMPLES</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/contact">CONTACT</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/roommates">ROOMMATES</a>
+		</div>
+	
+		<div class="main">
+			<center>
+			<h1>roommates<hr size="1" style="width:200"></h1>
+
+			<div class="icons" id="electric_img"><a href="/roommates/electric"><img src="/images/electric.png" onmouseover="this.src='/images/electric_click.png'" onmouseout="this.src='/images/electric.png'"/></a></div>
+
+			<div class="icons" id="muffin_img"><a href="/roommates/password"><img src="/images/muffin.png" onmouseover="this.src='/images/muffin_click.png'" onmouseout="this.src='/images/muffin.png'"/></a></div>
+
+			<br><br>
+		
+			<h2><a href="/">home</a></h2>
+			</center>
+		</div>
+	</body>
+
+
+
+</html>

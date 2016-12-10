@@ -1,0 +1,103 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<title>roommates - electric</title>
+		
+		<script type="text/javascript">
+   			function toggle_visibility(id) {
+       			var e = document.getElementById(id);
+    			e.style.display = (e.style.display == 'inline-block') ? 'none' : 'inline-block';
+   			}
+		</script>
+		
+	</head>
+	
+	<body style="font-size:120%">
+	
+		<div class="top">
+    		<input type='image' src='/images/menu.png' id='hideshow' alt='hide/show' width='48' height='48' onclick="toggle_visibility('left');">
+		</div>
+
+		<div class="left" id="left" style="font-size:100%">
+    		<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>MENU</b><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.github.com/michaelonjack">GITHUB</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/info">INFORMATION</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/samples">SAMPLES</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/contact">CONTACT</a><br><br>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/roommates">ROOMMATES</a>
+		</div>
+	
+		<div class="main">
+			<center>
+			<h1 style="font-size:250%">Electric Bills<hr size="1" style="width:160"></h1>
+			
+			<h3>
+			April - May
+			<br>
+			Total: $421.74, Per Person: $38.34
+			</h3>
+		
+			<center>
+			<table>
+			<tr>
+			<td>
+			<figure>
+				<div class="icons" id="eb1_img"><a href="/images/electric/EB1-April.pdf""><img src="/images/EB.png"/></a></div>
+				<figcaption style="text-align: center"><h3>1st Floor<br>$193.06</h3></figcaption>
+			</figure>
+			</td>
+			<td>
+			<figure>
+				<div class="icons" id="eb2_img"><a href="/images/electric/EB2-April.pdf"><img src="/images/EB.png"/></a></div>
+				<figcaption style="text-align: center"><h3>2nd Floor<br>$76.68</h3></figcaption>
+			</figure>
+			</td>
+			<td>
+			<figure>
+				<div class="icons" id="eb3_img"><a href="/images/electric/EB3-April.pdf"><img src="/images/EB.png"/></a></div>
+				<figcaption style="text-align: center"><h3>House<br>$152.00</h3></figcaption>
+			</figure>
+			</td>
+			</tr>
+			</table>
+			<h3>Paid: Ben H, Drew N, Dylan F, Jesse H, Josh P, Nick H, Ryan L, Sean O</h3>
+			</center>
+		
+			<br><br>
+			<h3>
+			Pay with VENMO @ mikeonjack@gmail.com / (610) 762-1106<br>
+			Pay with Paypal/Credit/Debit
+			</h3>
+			
+			<br><br>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="business" value="mikeonjack@gmail.com">
+				<input type="hidden" name="lc" value="US">
+				<input type="hidden" name="item_name" value="Electric Bill">
+				<input type="hidden" name="amount" value="38.34">
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="hidden" name="button_subtype" value="services">
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="tax_rate" value="0.000">
+				<input type="hidden" name="shipping" value="0.00">
+				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+				<input style="display: block; margin: 0 auto;" type="image" src="/images/pay_button.png" class="darkableImage" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			</form>
+			<br><br>
+		
+			<h3>
+			<a href="/">home</a>  |  
+			<a href="/roommates">back</a>  |  
+			<a href="/roommates/electric/previous">previous bills</a>
+			</h3>
+			
+			<br>
+			</center>
+		</div>
+		
+	</body>
+	
+</html>
