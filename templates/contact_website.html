@@ -87,8 +87,16 @@
             			<label for="message" style="font-size:220%; font-weight:lighter;">Message</label>
             			<textarea id="message" class="form-control" name="body" rows="5">{{body}}</textarea>
             		</div>
+            		<button type="submit" class="btn btn-primary">Send</button>
             	</form>
             </div>
+        </div>
+        <div class="row" style="margin:50px 0px 0px 0px;">
+        	<div class="col-xs-1 col-md-1"></div>
+        	<div class="col-xs-11 col-md-11 text-left">
+        		<div name="error" style="font-size:220%; font-weight:normal; color:#FA5858">{{error}}</div>
+        	</div>
+        	<div class="col-xs-1 col-md-1"></div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center" style="font-size:220%; font-weight:lighter; margin:90px 0px 50px 0px;">
@@ -98,49 +106,3 @@
 	</div>
 </body>
 </html>
-
-<!--
-<div class="main">
-		<center><h1 style="font-size:250%">contact<hr size="1" style="width:100"></h1></center>
-
-		<div style="margin-left:2.5cm">
-			<h2>
-			My name is Michael Onjack.
-			<br>
-			You can call me at 610-762-1106
-			<br>
-			Or email me at mikeonjack@gmail.com.
-			<br>
-			I currently live in Arlington, Virginia.
-				<br><br>
-
-				<h2>You can also contact me directly by using this form.</h2>
-				<br>
-				<form method="post" style="font-family: 'Lato', sans-serif">
-
-					<label>
-						<h2>Your email adress:</h2><br>
-						<input name="sender" type="text" value="{{sender}}">
-					</label>
-					<br><br>
-					<label>
-						<h2>Subject:</h2><br>
-						<input name="title" type="text" value="{{title}}">
-					</label>
-					<br><br>
-					<label>
-						<h2>Message:</h2><br>
-						<textarea name="body">{{body}}</textarea>
-					</label>
-					<br><br>
-					<input type="submit" value="Send!">
-					<br>
-					<div name="error" style="color:#FA5858">{{error}}</div>
-				</form>
-				</h2>
-			</div>
-
-			<br><br>
-			<center><h2><a href="/">home</a></h2></center>
-		</div>
-		-->
