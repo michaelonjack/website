@@ -1,0 +1,28 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<title>info</title>
+	</head>
+	<body style="font-size:120%">
+		<h1 style="font-size:250%">about me<hr style="width:120"></h1>
+		<br>
+		Michael Onjack
+		<br>
+		The Pennsylvania State University
+		<br>
+		Expected: May 2016
+		<br>
+		Major: Computer Science
+		<br>
+		Minor: Mathematics
+		<br>
+		<!--
+		<a style="color:white" href="/images/RESUME.pdf">Resume</a>
+		-->
+		<br><br><br>
+		<a style="color:white" href="/">home</a>
+	</body>
+
+</html>

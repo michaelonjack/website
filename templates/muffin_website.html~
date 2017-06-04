@@ -1,0 +1,50 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<title>muffin watch</title>
+		
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load the Phaser game framework -->
+        <script src="/js/phaser.min.js"></script>
+        <!-- Load the game code -->
+        <script src="/js/game.js"></script>
+	</head>
+	
+	<body style="font-size:120%">
+	<br>
+	
+		<h1 align ="center" style="font-size:250%">muffin<hr style="width:90"></h1>
+		
+		<center>
+		<table>
+		<tr>
+		<td>
+			<a href="https://i.imgflip.com/rjs47.gif"><img class="muffin_pic" src="https://i.imgflip.com/rjs47.gif"/></a>
+		</td>
+		<td>
+			<a href="/images/muffin/muffin1.jpg"><img class="muffin_pic" src="/images/muffin/muffin1.jpg"/></a>
+		</td>
+		<td>
+			<a href="/images/muffin/muffin2.jpg"><img class="muffin_pic" src="/images/muffin/muffin2.jpg"/></a>
+		</td>
+		<td>
+			<a href="/images/muffin/muffin3.jpg"><img class="muffin_pic" src="/images/muffin/muffin3.png"/></a>
+		</td>
+		</tr>
+		</table>
+		</center>
+	
+	<br><br>
+		<center>
+		<!-- JESSE GAME -->
+		<div style="margin:0 auto; width: 50%" id="gameDiv"> </div>
+		</center>
+	<br><br>
+	
+		<a style="color:white" href="/">home</a>
+	</body>
+	
+</html>

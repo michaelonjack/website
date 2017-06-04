@@ -16,27 +16,24 @@
     <script src="/js/phaser.min.js"></script>
     <!-- Load the game code -->
     <script src="/js/game.js"></script>
-	<script type="text/javascript">
-   		function toggle_visibility(id) {
-       		var e = document.getElementById(id);
-    		e.style.display = (e.style.display == 'inline-block') ? 'none' : 'inline-block';
-   		}
-	</script>
 </head>
 <body class="main-body">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/">home</a></li>
+                <li><a href="https://www.github.com/michaelonjack">github</a></li>
+                <li><a href="/info">info</a></li>
+                <li class="active"><a href="#">samples</a></li>
+                <li><a href="/contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container-fluid">
-        <div class="navigator-menu-button-container">
-            <input type='image' src='/images/menu.png' id='hideshow' alt='hide/show' width='48' height='48' onclick="toggle_visibility('left');">
-        </div>
-        <div class="navigator-menu" id="left">
-            <br><b>MENU</b><br><br>
-            <a href="http://www.github.com/michaelonjack">GITHUB</a><br><br>
-            <a href="/info">INFORMATION</a><br><br>
-            <a href="/samples">SAMPLES</a><br><br>
-            <a href="/contact">CONTACT</a><br><br>
-            <a href="/roommates">ROOMMATES</a>
-        </div>
-        <div class="row" style="margin:70px 0px 40px 0px;">
+        <div class="row" style="margin-bottom:3em;">
             <div class="col-xs-12 col-md-12 text-center">
                 <h1 style="font-weight:lighter; font-size: 3.5em;">
                     samples
@@ -56,14 +53,9 @@
                 </figure>
             </div>
         </div>
-        <div class="row" style="font-size:220%; font-weight:lighter; margin:40px 0px 0px 0px;">
+        <div class="row" style="font-size:220%; font-weight:lighter;">
             <div class="col-xs-12 col-md-12 text-center">
             <a href="http://www.github.com/michaelonjack">GITHUB</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12 text-center" style="font-size:220%; font-weight:lighter; margin:90px 0px 50px 0px;">
-                <a href="/">home</a>
             </div>
         </div>
     </div>

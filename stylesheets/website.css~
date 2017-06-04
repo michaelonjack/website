@@ -1,0 +1,142 @@
+
+body {
+	background-color: black;
+	color: #BAB6B7;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+img {
+	height: 140px;
+    width: 140px;
+    margin: auto;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.icons {
+	height: 140px;
+    width: 140px;
+    display: inline-block;
+    border-radius: 5px;
+	margin:15px;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+	font-size: 350%;
+	font-weight:300;
+}
+
+h2 {
+        font-family: 'Lato', sans-serif;
+	font-size: 200%;
+	font-weight:300;
+}
+
+hr {
+	width:250;
+}
+
+textarea {
+	width: 350px;
+	height: 120px;
+  	border-radius: 3px;
+  	border: none;
+  	box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+  	transition: all 0.2s linear;
+  	font-family: "Helvetica Neue", sans-serif;
+  	font-size: 13px;
+  	color: #222222;
+  	position: relative;
+  	padding-left: 10px;
+  	padding-top: 10px;
+
+  &::-webkit-input-placeholder {
+    color: #999999;
+  }
+  
+  &:-moz-placeholder {
+    color: #999999;
+  }
+
+  &:focus{
+    box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35,146,243,0.5);
+    outline: none;
+  }
+}
+
+.outerLink {
+    background-color:black; 
+    display:inline-block; 
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+img.darkableImage {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+input[type=text]{
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+  transition: all 0.2s linear;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  color: #222222;
+  position: relative;
+  height: 36px;
+  width: 300px;
+  padding-left: 10px;
+
+  &::-webkit-input-placeholder {
+    color: #999999;
+  }
+  
+  &:-moz-placeholder {
+    color: #999999;
+  }
+
+  &:focus{
+    box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35,146,243,0.5);
+    outline: none;
+  }
+}
+
+input[type=password]{
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+  transition: all 0.2s linear;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  color: #222222;
+  position: relative;
+  height: 36px;
+  width: 300px;
+  padding-left: 10px;
+
+  &::-webkit-input-placeholder {
+    color: #999999;
+  }
+  
+  &:-moz-placeholder {
+    color: #999999;
+  }
+
+  &:focus{
+    box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35,146,243,0.5);
+    outline: none;
+  }
+}
+
+
+.muffin_pic {
+	width: 200px;
+	height: 400px;
+}
+
+

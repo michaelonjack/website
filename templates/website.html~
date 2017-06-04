@@ -1,0 +1,26 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<title>michaelonjack</title>
+	</head>
+	<br><br><br><br><br>
+	<body>
+		<h1>michael onjack<hr></h1>
+
+		<div class="icons" id="github_img" style="background-color:gray"><a href="http://www.github.com/michaelonjack"><img src="/images/github.png" onmouseover="this.src='/images/github_click.png'" onmouseout="this.src='/images/github.png'"/></a></div>
+
+		<div class="icons" id="info_img"><a href="/info"><img src="/images/info.png" onmouseover="this.src='/images/info_click.png'" onmouseout="this.src='/images/info.png'"/></a></div>
+
+		<div class="icons" id="samples_img"><a href="/samples"><img src="/images/coding.png" onmouseover="this.src='/images/coding_click.png'" onmouseout="this.src='/images/coding.png'"/></a></div>
+
+		<div class="icons" id="contact_img"><a href="/contact"><img src="/images/contact.png" onmouseover="this.src='/images/contact_click.png'" onmouseout="this.src='/images/contact.png'"/></a></div>
+		
+		<div class="icons" id="roommates_img"><a href="/roommates"><img src="/images/roommates.png" onmouseover="this.src='/images/roommates_click.png'" onmouseout="this.src='/images/roommates.png'"/></a></div>
+		<br><br>
+	</body>
+
+
+
+</html>

@@ -1,0 +1,175 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<title>roommates - electric</title>
+	</head>
+	<body style="font-size:120%">
+		<h1 style="font-size:250%">Electric Bills<hr style="width:160"></h1>
+		
+		
+		August - September
+		<br>
+		Total: $190.88, Per Person: $17.36
+		<center>
+		<table>
+		<tr>
+		<td>
+		<figure>
+			<div class="icons" id="eb1_august_img"><a href="/images/electric/EB1-August.pdf""><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">1st Floor<br>$61.31</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb2_august_img"><a href="/images/electric/EB2-August.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">2nd Floor<br>$66.63</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb3_august_img"><a href="/images/electric/EB3-August.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">House<br></figcaption>
+		</figure>
+		</td>
+		<tr>
+		</table>
+		Paid: Ben H, Drew N, Dylan F, Jesse H, Jesse R, Josh P, Justin R, Nick H, Ryan L, Sean O
+		</center>
+		
+		
+		<br>
+		
+		
+		September - October
+		<br>
+		Total: $233.16, Per Person: $21.20
+		<center>
+		<table>
+		<tr>
+		<td>
+		<figure>
+			<div class="icons" id="eb1_img"><a href="/images/electric/EB1-September.pdf""><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">1st Floor<br>$75.53</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb2_img"><a href="/images/electric/EB2-September.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">2nd Floor<br>$64.65</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb3_img"><a href="/images/electric/EB3-September.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">House<br>$92.98</figcaption>
+		</figure>
+		</td>
+		<tr>
+		</table>
+		Paid: Ben H, Drew N, Dylan F, Jesse H, Jesse R, Josh P, Justin R, Nick H, Ryan L, Sean O
+		</center>
+		
+		<br>
+		
+		October - November
+		<br>
+		Total: $256.41, Per Person: 23.31
+		<center>
+		<table>
+		<tr>
+		<td>
+		<figure>
+			<div class="icons" id="eb1_img"><a href="/images/electric/EB1-October.pdf""><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">1st Floor<br>$83.09</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb2_img"><a href="/images/electric/EB2-October.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">2nd Floor<br>$71.03</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb3_img"><a href="/images/electric/EB3-October.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">House<br>$102.29</figcaption>
+		</figure>
+		</td>
+		</tr>
+		</table>
+		Paid: Ben H, Drew N, Dylan F, Jesse H, Jesse R, Josh P, Justin R, Nick H, Ryan L, Sean O
+		</center>
+		
+		<br>
+		
+		November - December
+		<br>
+		Total: $382.88, Per Person: $34.81
+		<center>
+		<table>
+		<tr>
+		<td>
+		<figure>
+			<div class="icons" id="eb1_img"><a href="/images/electric/EB1-November.pdf""><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">1st Floor<br>$171.15</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb2_img"><a href="/images/electric/EB2-November.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">2nd Floor<br>$64.41</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb3_img"><a href="/images/electric/EB3-November.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">House<br>$147.32</figcaption>
+		</figure>
+		</td>
+		</tr>
+		</table>
+		Paid: Ben H, Drew N, Dylan F, Jesse H, Jesse R, Josh P, Justin R, Ryan L, Sean O
+		</center>
+		
+		<br>
+		
+		December - January
+		<br>
+		Total: $347.45, Per Person: $31.59
+		<center>
+		<table>
+		<tr>
+		<td>
+		<figure>
+			<div class="icons" id="eb1_img"><a href="/images/electric/EB1-December.pdf""><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">1st Floor<br>$138.20</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb2_img"><a href="/images/electric/EB2-December.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">2nd Floor<br>$73.61</figcaption>
+		</figure>
+		</td>
+		<td>
+		<figure>
+			<div class="icons" id="eb3_img"><a href="/images/electric/EB3-December.pdf"><img src="/images/EB.png"/></a></div>
+			<figcaption style="text-align: center">House<br>$135.64</figcaption>
+		</figure>
+		</td>
+		</tr>
+		</table>
+		Paid: Ben H, Drew N, Dylan F, Jesse H, Josh P, Justin R, Sean O
+		</center>
+		
+		<br>
+		<a style="color:white" href="/">home</a>  |  
+		<a style="color:white" href="/roommates/electric">back</a>
+		<br>
+	</body>
+	
+</html>
+		
+		

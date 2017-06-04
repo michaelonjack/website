@@ -1,0 +1,54 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<title>contact</title>
+	</head>
+	<body style="font-size:120%">
+		
+		<h1 style="font-size:250%">contact<hr style="width:100"></h1>
+
+		Michael Onjack
+		<br><br>
+		Cell: 610-762-1106
+		<br><br>
+		Email: <br>
+		mzo5081@psu.edu
+		<br>
+		mikeonjack@gmail.com
+		<br><br>
+		Address: 
+		<br>
+		277 Woodland Drive
+		<br>
+		State College, Pennsylvania 16803
+		<br><br><br>
+		
+		<h1 style="font-size:150%">Direct Contact<hr style="width:150"></h1>
+		<form method="post" style="font-family: 'Lato', sans-serif">
+			
+			<label>
+				Your email adress:<br>
+				<input name="sender" class="style-1" type="text" value="{{sender}}">
+			</label>
+			<br><br>
+			<label>
+				Subject:<br>
+				<input name="title" type="text" value="{{title}}">
+			</label>
+			<br><br>
+			<label>
+				Message:<br>
+				<textarea name="body">{{body}}</textarea>
+			</label>
+			<br><br>
+			<input type="submit" value="Send!">
+			<br>
+			<div name="error" style="color:#FA5858">{{error}}</div>
+		</form>
+		<br><br>
+		
+		<a style="color:white" href="/">home</a>
+	</body>
+</html>

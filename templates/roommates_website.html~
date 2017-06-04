@@ -1,0 +1,30 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" href="/stylesheets/website.css" rel="Stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load the Phaser game framework -->
+        <script src="/home/monjack/Programming/games/asteroids/js/phaser.min.js"></script>
+        <!-- Load the game code -->
+        <script src="/home/monjack/Programming/games/asteroids/js/game.js"></script>
+		<title>roommates</title>
+	</head>
+	<br><br><br><br><br>
+	<body>
+		<h1>roommates<hr style="width:200"></h1>
+
+		<div class="icons" id="electric_img"><a href="/roommates/electric"><img src="/images/electric.png" onmouseover="this.src='/images/electric_click.png'" onmouseout="this.src='/images/electric.png'"/></a></div>
+
+		<div class="icons" id="muffin_img"><a href="/roommates/password"><img src="/images/muffin.png" onmouseover="this.src='/images/muffin_click.png'" onmouseout="this.src='/images/muffin.png'"/></a></div>
+
+		<br><br>
+		
+		<a style="color:white" href="/">home</a>
+		<!-- This is where the game will be displayed -->
+        <div id="gameDiv"> </div>
+	</body>
+
+
+
+</html>

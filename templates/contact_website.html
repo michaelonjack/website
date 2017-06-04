@@ -9,31 +9,27 @@
 
 	<link rel="stylesheet" type="text/css" href="/stylesheets/website.css">
 	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:100,300,400">
 	<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-   		function toggle_visibility(id) {
-       		var e = document.getElementById(id);
-    		e.style.display = (e.style.display == 'inline-block') ? 'none' : 'inline-block';
-   		}
-	</script>
 </head>
 <body class="main-body">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/">home</a></li>
+                <li><a href="https://www.github.com/michaelonjack">github</a></li>
+                <li><a href="/info">info</a></li>
+                <li><a href="/samples">samples</a></li>
+                <li class="active"><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </nav>
 	<div class="container-fluid">
-		<div class="navigator-menu-button-container">
-            <input type='image' src='/images/menu.png' id='hideshow' alt='hide/show' width='48' height='48' onclick="toggle_visibility('left');">
-        </div>
-        <div class="navigator-menu" id="left">
-            <br><b>MENU</b><br><br>
-            <a href="http://www.github.com/michaelonjack">GITHUB</a><br><br>
-            <a href="/info">INFORMATION</a><br><br>
-            <a href="/samples">SAMPLES</a><br><br>
-            <a href="/contact">CONTACT</a><br><br>
-            <a href="/roommates">ROOMMATES</a>
-        </div>
-
-        <div class="row" style="margin:70px 0px 40px 0px;">
+        <div class="row" style="margin-bottom:3em;">
         	<div class="col-xs-12 col-md-12 text-center">
         		<h1 style="font-weight:lighter; font-size: 3.5em;">
                     contact
@@ -44,50 +40,47 @@
         <div class="row">
             <div class="col-xs-1 col-md-1"></div>
             <div class="col-xs-11 col-md-11 text-left" style="font-size:220%; font-weight:lighter;">
-                My name is Michael Onjack.
+                My name is Michael Onjack
             </div>
         </div>
         <div class="row">
             <div class="col-xs-1 col-md-1"></div>
             <div class="col-xs-11 col-md-11 text-left" style="font-size:220%; font-weight:lighter;">
-                You can call me at 610-762-1106
+                You can call me at 610.762.1106
             </div>
         </div>
         <div class="row">
             <div class="col-xs-1 col-md-1"></div>
             <div class="col-xs-11 col-md-11 text-left" style="font-size:220%; font-weight:lighter;">
-                Or email me at mikeonjack@gmail.com.
+                Or email me at mikeonjack@gmail.com
             </div>
         </div>
         <div class="row">
             <div class="col-xs-1 col-md-1"></div>
             <div class="col-xs-11 col-md-11 text-left" style="font-size:220%; font-weight:lighter;">
-                I currently live in Arlington, Virginia.
+                I currently live in Arlington, Virginia
             </div>
         </div>
-        <div class="row" style="margin:40px 0px 0px 0px;">
+        <div class="row" style="margin-top:2em; margin-bottom:1em;">
             <div class="col-xs-1 col-md-1"></div>
             <div class="col-xs-11 col-md-11 text-left" style="font-size:220%; font-weight:lighter;">
-            	You can also contact me directly by using this form.
+            	You can also contact me directly by using this form
             </div>
         </div>
-        <div class="row" style="margin:40px 0px 0px 0px;">
+        <div class="row">
             <div class="col-xs-1 col-md-1"></div>
-            <div class="col-xs-11 col-md-11 text-left">
+            <div class="col-xs-5 col-md-5 text-left">
             	<form method="post">
-            		<div class="form-group" style="margin:0px 0px 30px 0px;">
-            			<label for="senderEmail" style="font-size:220%; font-weight:lighter;">Email address</label>
-            			<input type="text" id="senderEmail" class="form-control" name="sender" value="{{sender}}" placeholder="Enter email">
+            		<div class="form-group" style="margin:0px 0px 10px 0px;">
+            			<input type="text" id="senderEmail" class="form-control" name="sender" value="{{sender}}" placeholder="email">
             		</div>
-            		<div class="form-group" style="margin:0px 0px 30px 0px;">
-            			<label for="subject" style="font-size:220%; font-weight:lighter;">Subject</label>
-            			<input type="text" id="subject" class="form-control" name="title" value="{{title}}" placeholder="Enter subject">
+            		<div class="form-group" style="margin:0px 0px 10px 0px;">
+            			<input type="text" id="subject" class="form-control" name="title" value="{{title}}" placeholder="subject">
             		</div>
-            		<div class="form-group" style="margin:0px 0px 30px 0px;">
-            			<label for="message" style="font-size:220%; font-weight:lighter;">Message</label>
-            			<textarea id="message" class="form-control" name="body" rows="5">{{body}}</textarea>
+            		<div class="form-group" style="margin:0px 0px 20px 0px;">
+            			<textarea id="message" class="form-control" name="body" rows="3" cols="1">{{body}}</textarea>
             		</div>
-            		<button type="submit" class="btn btn-primary">Send</button>
+            		<button type="submit" class="btn btn-primary">send</button>
             	</form>
             </div>
         </div>
@@ -97,11 +90,6 @@
         		<div name="error" style="font-size:220%; font-weight:normal; color:#FA5858">{{error}}</div>
         	</div>
         	<div class="col-xs-1 col-md-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12 text-center" style="font-size:220%; font-weight:lighter; margin:90px 0px 50px 0px;">
-                <a href="/">home</a>
-            </div>
         </div>
 	</div>
 </body>
