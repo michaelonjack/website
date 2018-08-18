@@ -7,6 +7,32 @@
   border-radius: 5px;
 }
 
+.icon:hover {
+  webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+  filter: blur(4px);
+}
+
+.icon-text {
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-size: 2em;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.icon-container:hover .icon-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 a:visited{
   color:black;
 }
@@ -141,6 +167,7 @@ input[type=password]{
   height: 140px;
   width: 140px;
   display: inline-block;
+  position: relative;
   border-radius: 5px;
   margin:15px;
 }

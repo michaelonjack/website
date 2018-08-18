@@ -12,10 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:100,300,400">
     <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <!-- Load the Phaser game framework -->
-    <script src="/js/phaser.min.js"></script>
-    <!-- Load the game code -->
-    <script src="/js/game.js"></script>
 </head>
 <body class="main-body">
     <nav class="navbar navbar-default">
@@ -28,7 +24,6 @@
                 <li><a href="https://www.github.com/michaelonjack">github</a></li>
                 <li><a href="/info">info</a></li>
                 <li class="active"><a href="#">samples</a></li>
-                <li><a href="/contact">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -37,105 +32,37 @@
             <div class="col-xs-12 col-md-12 text-center">
                 <h1 style="font-weight:lighter; font-size: 3.5em;">
                     samples
-                    <hr style="height:.03em; width:2.5em; border: none; color:gray; background-color: gray;">
+                    <hr style="height:.03em; width:3em; border: none; color:gray; background-color: gray;">
                 </h1>
             </div>
         </div>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                            <img src="/images/javascript.png" style="margin-right:1em;"/>
-                            Javascript: Asteroids
-                        </a>
-                    </h4>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-xs-12 cold-md-10 text-center">
+
+                <div class="icon-container" id="kodala_img" style="background-color:salmon">
+                    <a href="https://kodala.codes">
+                        <img class="icon" src="/images/kodala-icon.png"/>
+                        <p class="icon-text">kodala</p>
+                    </a>
                 </div>
-                <div id="collapse1" class="panel-collapse collapse">
-                    <div class="panel-body" style="background-color: #FFFAF0;">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12 text-center">
-                                <figure>
-                                    <center><div style="" id="gameDiv"> </div></center>
-                                    <figcaption>
-                                        <h3 style="font-size:150%; font-weight:lighter;"">
-                                            Asteroids: A javascript implementation of the classic game of Asteroids (featuring Jesse's head).
-                                        </h3>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="icon-container" id="tailgator_img">
+                    <a href="https://itunes.apple.com/us/app/tailgator-share-your-gameday/id1386231487?mt=8">
+                        <img class="icon" src="/images/tailgator-icon.png"/>
+                        <p class="icon-text">tailgator</p>
+                    </a>
                 </div>
+
+                <div class="icon-container" id="thread_img">
+                    <a href="https://itunes.apple.com/us/app/thread-share-what-you-wear/id1203555931?mt=8">
+                        <img class="icon" src="/images/thread-icon.png"/>
+                        <p class="icon-text">thread</p>
+                    </a>
+                </div>
+
             </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                            <img src="/images/swift.png" style="margin-right:1em;" />
-                            iOS: Thread
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse">
-                    <div class="panel-body" style="background-color: #FFFAF0;">
-                        <div id="thread-carousel" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#thread-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#thread-carousel" data-slide-to="1"></li>
-                                <li data-target="#thread-carousel" data-slide-to="2"></li>
-                            </ol>
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-12 text-center">
-                                            <img src="/images/thread1.png" alt="Thread App image">
-                                            <div class="carousel-caption"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-12 text-center">
-                                            <img src="/images/thread2.png" alt="Thread App image">
-                                            <div class="carousel-caption"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-12 text-center">
-                                            <img src="/images/thread3.png" alt="Thread App image">
-                                            <div class="carousel-caption"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#thread-carousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#thread-carousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <div class="row" style="margin-top:1em;">
-                            <div class="col-xs-12 col-md-12 text-center" style="">
-                                <h3 style="font-size:150%; font-weight:lighter;"">
-                                    Thread: iOS app that lets you share what you wear with those around you. See what people within a two mile radius of you are wearing and steal their style.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 </body>
