@@ -1,11 +1,32 @@
 import os
 import jinja2
 import webapp2
+import urllib2
+import sys
+import re
+import json
 from google.appengine.api import mail
 
 template_dir = os.path.join(os.path.dirname(__file__),'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),
         autoescape = True) #Jinja will now autoescape all html
+
+conferences = {}
+conferences["acc"] = "9"
+conferences["big10"] = "11"
+conferences["big12"] = "12"
+conferences["pac12"] = "18"
+conferences["sec"] = "19"
+
+def getNextRowStartIndex(html):
+    firstTeamIndex = 0
+    try:
+        firstTeamIndex = html.index("wisbb_firstTeam")
+    except ValueError:
+        firstTeamIndex = sys.maxint
+
+
+    return firstTeamIndex
 
 
 
@@ -58,6 +79,71 @@ class ContactPage(Handler):
 class SamplesPage(Handler):
     def get(self):
         self.render("samples_website.html")
+
+class AJAXTailgatorScores(Handler):
+
+    def get(self):
+        self.response.headers['Content-Type'] = 'application/json'
+
+        week = self.request.get("week")
+        conference = self.request.get("conference")
+
+        url = 'https://www.foxsports.com/college-football/schedule?season=2018&seasonType=1&week=' + week + '&group=' + conferences[conference]
+        response = urllib2.urlopen(url)
+        
+        html = response.read()
+        html = html[html.index('wisbb_scheduleTable'):html.index('wisbb_footer')]
+
+        data = []
+        currentIndex = getNextRowStartIndex(html)
+
+        while currentIndex != sys.maxint:
+        
+            html = html[currentIndex+1:]
+            html = html[html.index("<span>")+1:]
+            html = html[html.index("<span>"):]
+
+            # Get away team data
+            awayTeamName = html[len("<span>"):html.index("</span>")]
+            # Ignore ranking numbers
+            if bool(re.search(r'\d', awayTeamName)):
+                html = html[1:]
+                html = html[html.index("<span>"):]
+                awayTeamName = html[len("<span>"):html.index("</span>")]
+
+
+            html = html[html.index("<div class=\"wisbb_score")+2:]
+            awayTeamScore = html[len("<div class=\"wisbb_score"):html.index("</div>")]
+
+        
+            # Get home team data
+            html = html[html.index("wisbb_secondTeam"):]
+            html = html[html.index("<div class=\"wisbb_score")+2:]
+            homeTeamScore = html[len("<div class=\"wisbb_score"):html.index("</div>")]
+
+            html = html[html.index("<span>")+1:]
+            html = html[html.index("<span>"):]
+
+            homeTeamName = html[len("<span>"):html.index("</span>")]
+            # Ignore ranking numbers
+            if bool(re.search(r'\d', homeTeamName)):
+                html = html[1:]
+                html = html[html.index("<span>"):]
+                homeTeamName = html[len("<span>"):html.index("</span>")]
+
+
+            # Create game using data and add it to the list
+            game = {}
+            game["awayTeamName"] = awayTeamName
+            game["homeTeamName"] = homeTeamName
+            game["awayTeamScore"] = awayTeamScore
+            game["homeTeamScore"] = homeTeamScore
+            data.append(game)
+
+            currentIndex = getNextRowStartIndex(html)
+
+
+        self.response.out.write(json.dumps(data))
 		
 
 
@@ -65,6 +151,7 @@ application = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/info', InfoPage),
     ('/contact', ContactPage),
-    ('/samples',SamplesPage)
+    ('/samples',SamplesPage),
+    (r'/tailgator.*', AJAXTailgatorScores)
 ], debug=True)
     
