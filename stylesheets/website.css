@@ -6,7 +6,6 @@
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
-    padding-top: 100px;
     color: #000;
     transition: background 500ms ease-in-out, color 500ms ease-in-out;
 }
@@ -17,7 +16,7 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="dark"] a {
-    border-bottom-color: rgba(255, 255, 255, 0.4);
+    border-bottom-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 body[data-theme="dark"] h1, body[data-theme="dark"] h4 {
@@ -181,6 +180,12 @@ h4, h5, h6 {
 
 #high-five-button {
     font-size: 40px;
+    background: none;
+    border:none;
+}
+
+#theme-button {
+    font-size: 30px;
     background: none;
     border:none;
 }
