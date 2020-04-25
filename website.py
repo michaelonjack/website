@@ -5,6 +5,7 @@ import urllib2
 import sys
 import re
 import json
+import logging
 from google.appengine.api import mail
 
 template_dir = os.path.join(os.path.dirname(__file__),'templates')
@@ -54,23 +55,25 @@ class InfoPage(Handler):
         self.render("info_website.html")
 
 class ContactPage(Handler):
-    def write_form(self,sender="",title="",body="",error=""):
-        self.render("contact_website.html",sender=sender,title=title,
-                body=body,error=error)
+    def write_form(self,email="",subject="",message="",error=""):
+        self.render("contact_website.html",email=email,subject=subject,
+                message=message,error=error)
     
     
     def post(self):
-    	sender = self.request.get("sender")
-    	title = self.request.get("title")
-    	message = self.request.get("body")
+    	firstName = self.request.get("firstName")
+        lastName = self.request.get("lastName")
+        email = self.request.get("email")
+    	subject = self.request.get("subject")
+    	message = self.request.get("message")
     	
-    	if sender and title and message:
-    		message = message + "\n\n\nFrom: " + sender
-    		mail.send_mail("mikeonjack@gmail.com","mikeonjack@gmail.com",title,message)
+    	if firstName and lastName and email and subject and message:
+    		message = message + "\n\n\nFrom: " + firstName + " " + lastName + " (" + email + ") "
+    		mail.send_mail("mikeonjack@gmail.com","mikeonjack@gmail.com",subject,message)
     		self.write_form('','','',"Sent! Thank you!")
     			
     	else:
-    		self.write_form(sender,title,message,"Please fill all fields.")
+    		self.write_form(email,subject,message,"Please fill all fields.")
     
     
     def get(self):
@@ -88,7 +91,9 @@ class AJAXTailgatorScores(Handler):
         week = self.request.get("week")
         conference = self.request.get("conference")
 
-        url = 'https://www.foxsports.com/college-football/schedule?season=2018&seasonType=1&week=' + week + '&group=' + conferences[conference]
+        logging.debug("Requesting tailgator scores")
+
+        url = 'https://www.foxsports.com/college-football/schedule?season=2019&seasonType=1&week=' + week + '&group=' + conferences[conference]
         response = urllib2.urlopen(url)
         
         html = response.read()
@@ -115,6 +120,20 @@ class AJAXTailgatorScores(Handler):
             html = html[html.index("<div class=\"wisbb_score")+2:]
             awayTeamScore = html[len("<div class=\"wisbb_score"):html.index("</div>")]
 
+
+            # Get game status
+            html = html[html.index("wisbb_status"):]
+            html = html[html.index(">"):]
+            status = html[1:html.index("<")]
+
+            if status == "LIVE":
+                    html = html[html.index("wisbb_network"):]
+                    html = html[html.index(">"):]
+                    channel = html[1:html.index("<")]
+
+                    if channel != "":
+                        status = status + " - " + channel
+
         
             # Get home team data
             html = html[html.index("wisbb_secondTeam"):]
@@ -138,6 +157,7 @@ class AJAXTailgatorScores(Handler):
             game["homeTeamName"] = homeTeamName
             game["awayTeamScore"] = awayTeamScore
             game["homeTeamScore"] = homeTeamScore
+            game["status"] = status
             data.append(game)
 
             currentIndex = getNextRowStartIndex(html)
@@ -149,9 +169,6 @@ class AJAXTailgatorScores(Handler):
 
 application = webapp2.WSGIApplication([
     ('/', MainPage),
-    ('/info', InfoPage),
-    ('/contact', ContactPage),
-    ('/samples',SamplesPage),
     (r'/tailgator.*', AJAXTailgatorScores)
 ], debug=True)
     
