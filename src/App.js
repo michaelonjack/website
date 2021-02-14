@@ -15,10 +15,6 @@ const App = () => {
 
   return (
     <Container fluid>
-      <div>
-      {process.env.REACT_APP_ENV}
-      here
-      </div>
       <Header />
       <Blurb />
       <Experience />
