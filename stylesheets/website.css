@@ -78,12 +78,6 @@ h5 {
     margin: 0 0 28px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 0 28px;
-}
-
 li {
     font-size: 17px;
     margin-bottom: 13px;
@@ -93,6 +87,12 @@ li {
 h4, h5, h6 {
     margin-top: 5px !important;
     margin-bottom:  5px !important;
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 28px;
 }
 
 .dark-text {
@@ -134,7 +134,7 @@ h4, h5, h6 {
 .tag {
     font-size: 12px;
     font-weight: 400;
-    padding: 5px 15px;
+    padding: 6px 15px;
     border-radius: 3px;
     margin-left: 18px;
     vertical-align: text-top;
@@ -216,11 +216,13 @@ h4, h5, h6 {
         left: 0;
         margin: 0;
     }
-}
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+    .theme-button-container {
+        margin-right: 0px !important;
+        padding-right: 0px !important;
+    }
 
+    #theme-button {
+        font-size: 20px;
+    }
 }
