@@ -6,6 +6,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 const App = () => {
+  console.log('here')
+  console.log(process.env.REACT_APP_ENV)
   if(process.env.REACT_APP_ENV !== 'development'
     && window.location.protocol !== 'https:') {
     const protocol = window.location.protocol
