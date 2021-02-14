@@ -6,7 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 const App = () => {
-  if(process.env.NODE_ENV !== 'development'
+  if(process.env.REACT_APP_ENV !== 'development'
     && window.location.protocol !== 'https:') {
     const protocol = window.location.protocol
     const href = window.location.href
