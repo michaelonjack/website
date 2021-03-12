@@ -144,8 +144,9 @@ h4, h5, h6 {
   font-size: 12px;
   font-weight: 500;
   padding: 6px 15px;
+  margin-left: 10px;
   border-radius: 3px;
-  vertical-align: text-top;
+  vertical-align: baseline;
   display: inline-block;
   white-space: nowrap;
 }
