@@ -2,10 +2,27 @@ const data = {
     projects: [
         {
             type: 'professional',
+            name: 'BlueGenAI',
+            position: 'Software Engineer',
+            startDate: 'June 2024',
+            endDate: 'Present',
+            links: [
+                {
+                    label: 'Site',
+                    url: 'https://bluegenai.com'
+                }
+            ],
+            technologies: ['Python', 'Flask', 'LlamaIndex'],
+            details: [
+                'Leading development on agentic AI tools for public sector case management systems.'
+            ]
+        },
+        {
+            type: 'professional',
             name: 'OmniSystems Inc.',
             position: 'Software Engineer',
             startDate: 'June 2020',
-            endDate: 'Present',
+            endDate: 'June 2024',
             links: [
                 {
                     label: 'Site',

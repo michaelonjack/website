@@ -27,7 +27,6 @@ const Header = () => {
                     <Row>
                         <HeaderLink title='Github' url='https://github.com/michaelonjack' />
                         <HeaderLink title='App Store' url='https://apps.apple.com/us/developer/michael-onjack/id1203555930' />
-                        <HeaderLink title='Resume' url={process.env.PUBLIC_URL + '/RESUME.pdf'} />
                         <HeaderLink title='Email' url='mailto:mikeonjack@gmail.com' />
                     </Row>
                 </Col>

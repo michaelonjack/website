@@ -30,7 +30,7 @@ const ThemeButton = () => {
     }, [])
 
     return (
-        <Row className='text-right'>
+        <Row className='text-end'>
             <Col xs={12}>
                 <button id='theme-button' onClick={toggleTheme}>
                     🌙
